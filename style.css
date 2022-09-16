@@ -1,0 +1,70 @@
+body{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+/* div */
+.header{
+
+}
+
+.main{
+    background-color: aqua;
+    float: left;
+}
+/* ul */
+.topnav{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+
+}
+/* li */
+.topnav li{
+    float: left;
+}
+
+.topnav a{
+    display: block;
+    padding: 8px;
+}
+
+.left{
+    background-color: yellow;
+    /* display: block; */
+    width: 300px;
+    overflow: hidden;
+    float: left;
+}
+
+.left #portrait img{
+    width: 200px;
+    height: 200px;
+    border: 40px solid yellow;
+    border-radius: 50%;    
+}
+
+.left h2, p{
+    text-align: center;
+    background-color: green;
+    padding-left: 0px;
+}
+
+#contact_info{
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    /* float: left; */
+    
+}
+
+#contact_info_img{
+    background-color: blueviolet;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.cvnav{
+    list-style-type: none;
+}
