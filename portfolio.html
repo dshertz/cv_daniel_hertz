@@ -8,14 +8,65 @@
     <title>Portfolio - Daniel Hertz</title>
 </head>
 <body>
-
-    <div class="navbar">
-        <a href="index.html">cv</a>
-        <a href="portfolio.html">Portfolio</a>
-
-    <div id="portfolio">
-        Portfolio
+    <!-- header med navigationsflikar till CV - Portfolio -->
+    <div class="header">
+        <ul class="topnav">
+            <li id="cv"><a href="index.html"><h1>CV</h1></a></li>
+            <li style="background-color:#a0bb1a;" id="portfolio"><a href="portfolio.html"><h1>portfolio</h1></a></li>
+        </ul>
     </div>
-    
+    <!-- main-div, uppdelad i två kolumner, vänster och höger -->
+    <div class="main_div">
+        <!-- vänster kolumn med bild, navigation i CV:t och kontaktinfo -->
+        <div class="left">
+
+            <div id="portrait">
+                <img src="portrait_cv.jpg" alt="Daniel Hertz Porträtt">
+                <h2>Daniel Hertz</h2>
+                <p>Webbutvecklare</p>
+            </div>
+
+            <div>
+                <ul id="cvnav">
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="#arbetslivserfarenhet">Arbetslivserfarenhet</a></li>
+                    <li><a href="#utbildning">Utbildning</a></li>
+                    <li><a href="#datorkunskaper">Datorkunskaper</a></li>
+                    <li><a href="#sprak">Språk</a></li>
+                    <li><a href="#intressen">Intressen</a></li>
+                </ul>
+            </div>
+        
+            <div id="contact">
+                <h3>Kontakt</h3>
+                <ul id="contact_info_img">
+                    <li>
+                    <img src="phone_green.png" alt="telefon"></li>
+                    <li><img src="mail_green.png" alt="mail"></li>
+                    <li><img src="marker_green.png" alt="adress"></li>
+                </ul>
+                <ul id="contact_info">
+                    <li>
+                        <a href="tel:+46707282292">+46 70-728 22 92</a>
+                    </li>
+                    <li>
+                        <a href="mailto:ds.hertz@gmail.com">ds.hertz@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/maps/nN3B3KBZzxAR8ozX8" target="_blank">Rosenlundsgatan 4A<br>&nbsp 554 50 Jönköping</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Div innehållandes portfolio med länkar -->
+        <div id="content_portfolio">
+            <h3>Portfolio</h3>
+                    <div>
+                       <a href=https://dshertz.github.io/uppgift1_html><h4>Övning: HTML uppgift1 Trädgårdar &nbsp;<img src="external-link_green.png" alt="GitHub"></h4></a> 
+                        <p>"göra en enkel webbsida som ser ut som bilden ovan. Här jobbar du med paragraf, image och style"</p>
+                    </div>
+        </div>
+
+    </div>
 </body>
 </html>

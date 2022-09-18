@@ -1,24 +1,102 @@
-body{
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
-
-/* div */
-.header{
-
+*{
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-.main{
-    background-color: aqua;
+/* Rubrik på topNav-flikarna */
+h1{
+    color:#23364e;
+    font-size:x-large;
+}
+/* mainContent-div */
+.main_content{
     float: left;
+    position: absolute;
+    left: 250px;
+    width: 65%;
 }
-/* ul */
+
+.content_left{
+    float: left;
+    width: 170px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    padding: 0;
+}
+
+.content_left p{
+margin: 0;
+padding: 0;
+padding-bottom: 10px;
+text-transform: uppercase;
+font-size: smaller;
+}
+
+.content_right{
+    position: absolute;
+    left: 250px;
+}
+
+.content_right p, .content_right h4{
+    margin: 0px;
+    padding: 0;
+    padding-bottom: 10px;
+    font-size: smaller;
+}
+
+.main_content h3{
+    color: #24374c;
+    text-transform: uppercase;
+}
+
+.content_right h4{
+    color:#8e9a52;
+    text-transform: uppercase;
+}
+
+.main_content #profil ul{
+    list-style-type:disc;
+    padding-left: 20px;
+    font-size: smaller;
+}
+
+.main_content #profil li{
+    padding: 5px;
+}
+
+#arbetslivserfarenhet .content_left div{
+    padding-bottom: 35px;
+}
+
+#arbetslivserfarenhet .content_right div{
+    padding-bottom: 20px;
+}
+
+#utbildning .content_left div{
+    padding-bottom: 20px;
+}
+
+#utbildning .content_right div{
+    padding-bottom: 62px;
+}
+
+#profil, #arbetslivserfarenhet, #utbildning, #datorkunskaper, #sprak, #intressen{
+    overflow: hidden;
+    width: 95%;
+    margin-left: 40px;
+}
+/* Vänster sida, navigation i CV */
+#cvnav a{
+    margin-left:0;
+    text-transform: uppercase;
+    font-size: smaller;
+}
+/* navigation top mellan CV och Portfolio */
 .topnav{
     margin: 0;
     padding: 0;
     list-style-type: none;
     overflow: hidden;
-
 }
-/* li */
+
 .topnav li{
     float: left;
 }
@@ -26,12 +104,36 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 .topnav a{
     display: block;
     padding: 8px;
+    text-decoration: none;
 }
 
+.topnav h1{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.topnav #cv{
+    background-color: #d3da8f;
+    margin-right: 5px;
+}
+
+.topnav #cv:hover{
+    background-color: #ccdc3a;
+}
+
+.topnav #portfolio{
+    background-color: #8e9a52;
+}
+
+.topnav #portfolio:hover{
+    background-color: #a0bb1a;
+}
+/* vänster sida av sidan med porträtt, navigation i CV och kontaktinfo */
 .left{
-    background-color: yellow;
-    /* display: block; */
-    width: 300px;
+    background-color: #24374c;
+    width: 250px;
+    height: 760px;
     overflow: hidden;
     float: left;
 }
@@ -39,32 +141,126 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 .left #portrait img{
     width: 200px;
     height: 200px;
-    border: 40px solid yellow;
+    border: 25px solid #24374c;
     border-radius: 50%;    
 }
 
-.left h2, p{
+.left h2, .left p{
     text-align: center;
-    background-color: green;
-    padding-left: 0px;
+    background-color: #24374c;
+    color: #edebe4;
+    text-transform:uppercase;
+    padding-bottom: 20px;
+    margin: -20px;
+}
+
+#contact h3{
+    color: #edebe4;
+    text-transform:uppercase;
+    font-size:medium;
+}
+
+#contact{
+    padding-left: 28px;
 }
 
 #contact_info{
-    background-color: blue;
+    background-color: #24374c;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    /* float: left; */
-    
+    float: left;
+}
+
+#contact_info a{
+    color:#edebe4;
+    text-decoration-line: none;
+    margin-left: 10px;
+    font-size: smaller;
 }
 
 #contact_info_img{
-    background-color: blueviolet;
+    list-style-type: none;
+    background-color: #24374c;
     margin: 0;
     padding: 0;
     float: left;
 }
 
-.cvnav{
+#contact_info_img li, #contact_info li{
+    padding-bottom: 10px;
+}
+
+#cvnav{
     list-style-type: none;
+    /* float: left; */
+    padding-left: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#cvnav a{
+    display: block;
+    padding: 8px;
+    padding-left: 30px;
+    background-color: #3b4d63;
+    color: #edebe4;
+    text-decoration: none;
+}
+
+#cvnav a:hover{
+background-color: #1b2938;
+color: #edebe4;
+}
+/* mainContent till höger, intressen och datorkunskaper */
+#intressen li{
+    float:left;
+    padding-right: 20px;
+}
+
+#intressen ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+#intressen p{
+    text-transform: none;
+}
+
+#intressen img{
+    padding-right: 5px;
+}
+
+#intressen div{
+    width: 500px;
+}
+
+#intressen h3{
+    margin-bottom: 0px;
+}
+
+#datorkunskaper{
+    margin-top: 100px;
+}
+/* Sida 2, portfolio */
+#content_portfolio{
+    float: left;
+    position: absolute;
+    left: 300px;
+}
+
+#content_portfolio h3{
+    color: #24374c;
+    text-transform: uppercase;
+}
+
+#content_portfolio a{
+    text-decoration-line: none;
+    color:#8e9a52;
+}
+
+#content_portfolio div{
+    border-bottom:1px solid #3b4d63;
+    border-bottom-width: 60%;
+    width: 90%;
 }
